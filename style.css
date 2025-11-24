@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(135deg, #ffb6e6, #ff66c4);
+    padding-top: 60px;
+    font-family: "Poppins", sans-serif;
+    color: #4a0036;
+}
+
+/* Título */
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Card onde aparece a frase */
+.card {
+    background: #ffe6f4;
+    border: 2px solid #ff9ad6;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Texto da frase */
+#frase {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #660042;
+
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+/* Fade-in */
+#frase.mostrar {
+    opacity: 1;
+}
+
+/* Botão */
+button.btn-primary {
+    background-color: #ff3ea5;
+    border-color: #ff3ea5;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #ff1e90;
+    border-color: #ff1e90;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 0, 140, 0.3);
+}
+
+button.btn-primary {
+    background-color: #ff3ea5;
+    border-color: #ff3ea5;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+
+    /* Neon inicial leve */
+    box-shadow: 0 0 8px #ff3ea5, 0 0 16px #ff6fc4;
+
+    transition: 
+        transform 0.15s ease,
+        box-shadow 0.3s ease,
+        background-color 0.25s ease;
+}
+
+/* Efeito neon forte no hover */
+button.btn-primary:hover {
+    background-color: #ff1e90;
+    border-color: #ff1e90;
+
+    transform: scale(1.08);
+
+    box-shadow: 
+        0 0 10px #ff1e90,
+        0 0 20px #ff1e90,
+        0 0 30px #ff5ab8,
+        0 0 45px #ff85cd;
+}
